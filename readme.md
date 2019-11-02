@@ -21,7 +21,7 @@ database port - 3306
 database server name - mysql
 database name - springbatchdb
 
-github url -
+github url - https://github.com/chibuisi/s-b-a.git
 
 
 docker file name - Dockerfile
