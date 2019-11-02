@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_USER: sa
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: springbatchdb
+      MYSQL_ROOT_HOST: 127.0.0.1
+    ports:
+      - 3306:3306
+    hostname: mysql
+  s-b-a:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
