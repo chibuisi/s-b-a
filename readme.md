@@ -4,6 +4,21 @@ Student ID : 610160
 
 This project was submitted as a requirement for Enterprise Architecture.
 
+
+**Instruction to run**
+    1. cd into root directory (cd /spring.batch)
+    2. Build the project without test to create the jar file - mvn package -DskipTests
+    2. Then run the docker-compose.yml file. -  sudo docker-compose up
+
+
+Rest Endpoint url - localhost:8080/run/job
+Login username - kelvin
+Login password - 1234;  (nb: include the semi colon)
+Server port - 8080
+database port - 3306
+database server name - mysql
+database name - springbatchdb
+
 Stack
     1. Java Spring Boot
     2. Java Spring Boot JPA
@@ -13,24 +28,5 @@ Stack
     6. Docker
 
 
-Rest Endpoint url - localhost:8080/run/job
-Login username - kelvin
-Login password - 1234;  (include the semi colon)
-Server port - 8080
-database port - 3306
-database server name - mysql
-database name - springbatchdb
-
 github url - https://github.com/chibuisi/s-b-a.git
 
-
-docker file name - Dockerfile
-docker compose file name - docker-compose.yml
-
-note - Dockerfile and docker-compose are found on root directory of this project.
-
-Instruction to run
-    cd into root directory (cd /spring/batch)
-    Then run the docker-compose.yml file.
-    ps - this app will run on localhost and port 8080
-    be sure port 8080 of your computer is not in use by another service
